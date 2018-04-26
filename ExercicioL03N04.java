@@ -8,7 +8,7 @@ public class ExercicioL03N04{
         ));
         int total = 0;
 
-     
+        
         
         while(total < quantidadeCarros){
             String modelo = JOptionPane.showInputDialog(null, 
@@ -20,10 +20,19 @@ public class ExercicioL03N04{
                 "Informe o ano do veiculo"
             ));
             total = total + 1;
-            int mediaAno =  
+            
+            
+            int mediaAno = ano * total / total;
+            double mediaValor = valor * total / total;
+
+            JOptionPane.showMessageDialog(null, 
+                "A média do ano dos veiculos é: " 
+                + mediaAno +
+                "\nA média do valor dos carros é: " 
+                + mediaValor);
 
         }  
         
-         
+            
     }
 }
